@@ -1,0 +1,12 @@
+inherit mono
+
+DESCRIPTION="Mono libgsf-1 bindings"
+HOMEPAGE="http://www.mono-project.com/"
+SRC_URI="http://primates.ximian.com/~joe/${P}.tar.gz"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	sed -i -e 's#shouldnotlink=no#shouldnotlink=yes#' ${D}/usr/lib/lib*.la
+}
