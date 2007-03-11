@@ -1,6 +1,6 @@
 diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x Makefile.in.in -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x mdate-sh -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x omf.make -x xmldocs.make origsrc/gsf-sharp-0.8.1/configure.in src/gsf-sharp-0.8.1/configure.in
 --- origsrc/gsf-sharp-0.8.1/configure.in	2006-09-18 15:26:20.000000000 -0500
-+++ src/gsf-sharp-0.8.1/configure.in	2007-03-07 14:21:52.550881800 -0600
++++ src/gsf-sharp-0.8.1/configure.in	2007-03-11 11:06:57.515625000 -0500
 @@ -14,17 +14,25 @@
  
  PKG_CHECK_MODULES(MONO_DEPENDENCY, mono >= 1.0, has_mono=true, has_mono=false)
@@ -46,7 +46,7 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depco
  PKG_CHECK_MODULES(GTK_SHARP, gtk-sharp-2.0 >= 2.4.0)
 diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x Makefile.in.in -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x mdate-sh -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x omf.make -x xmldocs.make origsrc/gsf-sharp-0.8.1/glue/Makefile.am src/gsf-sharp-0.8.1/glue/Makefile.am
 --- origsrc/gsf-sharp-0.8.1/glue/Makefile.am	2006-09-18 13:29:22.000000000 -0500
-+++ src/gsf-sharp-0.8.1/glue/Makefile.am	2007-03-07 14:23:05.675881800 -0600
++++ src/gsf-sharp-0.8.1/glue/Makefile.am	2007-03-11 11:06:57.515625000 -0500
 @@ -9,6 +9,6 @@
  
  libgsfglue_la_SOURCES = $(GSF_GLUE_SOURCES)
@@ -57,7 +57,7 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depco
  libgsfglue_la_LIBADD = $(GSF_LIBS)
 diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x Makefile.in.in -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x mdate-sh -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x omf.make -x xmldocs.make origsrc/gsf-sharp-0.8.1/gsf/gsf-sharp.dll.config.in src/gsf-sharp-0.8.1/gsf/gsf-sharp.dll.config.in
 --- origsrc/gsf-sharp-0.8.1/gsf/gsf-sharp.dll.config.in	2006-09-18 13:29:22.000000000 -0500
-+++ src/gsf-sharp-0.8.1/gsf/gsf-sharp.dll.config.in	2007-03-07 14:22:24.347756800 -0600
++++ src/gsf-sharp-0.8.1/gsf/gsf-sharp.dll.config.in	2007-03-11 11:06:57.531250000 -0500
 @@ -1,3 +1,3 @@
  <configuration>
 -  <dllmap dll="libgsf-1.dll" target="libgsf-1@LIB_PREFIX@.@GSF_SO_VERSION@@LIB_SUFFIX@"/>

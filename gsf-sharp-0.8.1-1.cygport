@@ -8,5 +8,8 @@ src_install() {
 	cd ${B}
 	cyginstall
 
+	# Mono doesn't like these stripped
+	chmod -w ${D}/usr/bin/*glue*.dll
+
 	sed -i -e 's#shouldnotlink=no#shouldnotlink=yes#' ${D}/usr/lib/lib*.la
 }
