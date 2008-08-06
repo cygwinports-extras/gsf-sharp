@@ -1,4 +1,3 @@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x Makefile.in.in -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x mdate-sh -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x omf.make -x xmldocs.make origsrc/gsf-sharp-0.8.1/configure.in src/gsf-sharp-0.8.1/configure.in
 --- origsrc/gsf-sharp-0.8.1/configure.in	2006-09-18 15:26:20.000000000 -0500
 +++ src/gsf-sharp-0.8.1/configure.in	2007-03-11 11:06:57.515625000 -0500
 @@ -14,17 +14,25 @@
@@ -44,7 +43,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depco
  AC_SUBST(LIB_SUFFIX)
  
  PKG_CHECK_MODULES(GTK_SHARP, gtk-sharp-2.0 >= 2.4.0)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x Makefile.in.in -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x mdate-sh -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x omf.make -x xmldocs.make origsrc/gsf-sharp-0.8.1/glue/Makefile.am src/gsf-sharp-0.8.1/glue/Makefile.am
 --- origsrc/gsf-sharp-0.8.1/glue/Makefile.am	2006-09-18 13:29:22.000000000 -0500
 +++ src/gsf-sharp-0.8.1/glue/Makefile.am	2007-03-11 11:06:57.515625000 -0500
 @@ -9,6 +9,6 @@
@@ -55,7 +53,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depco
 +libgsfglue_la_LDFLAGS = -avoid-version -no-undefined
  
  libgsfglue_la_LIBADD = $(GSF_LIBS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x Makefile.in.in -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x mdate-sh -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x omf.make -x xmldocs.make origsrc/gsf-sharp-0.8.1/gsf/gsf-sharp.dll.config.in src/gsf-sharp-0.8.1/gsf/gsf-sharp.dll.config.in
 --- origsrc/gsf-sharp-0.8.1/gsf/gsf-sharp.dll.config.in	2006-09-18 13:29:22.000000000 -0500
 +++ src/gsf-sharp-0.8.1/gsf/gsf-sharp.dll.config.in	2007-03-11 11:06:57.531250000 -0500
 @@ -1,3 +1,3 @@
