@@ -1,4 +1,0 @@
-category: Dotnet Gnome
-requires: glib2 libgsf114 mono glib-sharp2
-sdesc: "Mono libgsf-1 bindings"
-ldesc: "Mono C# bindings for the GNOME Structured File library"

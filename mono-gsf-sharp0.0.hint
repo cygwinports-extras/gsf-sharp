@@ -1,0 +1,5 @@
+category: DotNET Gnome
+requires: libgcc1 libglib2.0_0 libgsf1_114 mono mono-glib-sharp2.0
+external-source: gsf-sharp
+sdesc: "Mono libgsf-1 bindings"
+ldesc: "Mono C# bindings for the GNOME Structured File library"

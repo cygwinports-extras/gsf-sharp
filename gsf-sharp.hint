@@ -1,0 +1,3 @@
+category: DotNET Gnome
+sdesc: "Mono libgsf-1 bindings (sources)"
+ldesc: "Mono C# bindings for the GNOME Structured File library"
