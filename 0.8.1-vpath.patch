@@ -1,0 +1,11 @@
+--- origsrc/gsf-sharp-0.8.1/gsf/makefile.am	2006-09-18 13:29:22.000000000 -0500
++++ src/gsf-sharp-0.8.1/gsf/makefile.am	2010-01-31 20:56:01.659773900 -0600
+@@ -24,7 +24,7 @@ gsf-api.xml:
+ 
+ generated-stamp: $(APIS) $(sources) Gsf.metadata $(CUSTOM_FILES)
+ 	$(GAPI_CODEGEN) --generate $(APIS) \
+-	--outdir=generated --customdir=. --assembly-name=gsf-sharp && touch generated-stamp
++	--outdir=generated --customdir=$(srcdir) --assembly-name=gsf-sharp && touch generated-stamp
+ 
+ sources = \
+ AssemblyInfo.cs

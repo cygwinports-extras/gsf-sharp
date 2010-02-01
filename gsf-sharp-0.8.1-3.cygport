@@ -3,7 +3,11 @@ inherit mono
 DESCRIPTION="Mono libgsf-1 bindings"
 HOMEPAGE="http://www.mono-project.com/"
 SRC_URI="http://primates.ximian.com/~joe/${P}.tar.gz"
-PATCH_URI="0.8.1-dllmap-cygwin.patch"
+
+PATCH_URI="
+	0.8.1-dllmap-cygwin.patch
+	0.8.1-vpath.patch
+"
 
 PKG_NAMES="${PN} mono-gsf-sharp0.0"
 mono_gsf_sharp0_0_CONTENTS="usr/"
