@@ -43,16 +43,6 @@
  AC_SUBST(LIB_SUFFIX)
  
  PKG_CHECK_MODULES(GTK_SHARP, gtk-sharp-2.0 >= 2.4.0)
---- origsrc/gsf-sharp-0.8.1/glue/Makefile.am	2006-09-18 13:29:22.000000000 -0500
-+++ src/gsf-sharp-0.8.1/glue/Makefile.am	2007-03-11 11:06:57.515625000 -0500
-@@ -9,6 +9,6 @@
- 
- libgsfglue_la_SOURCES = $(GSF_GLUE_SOURCES)
- 
--libgsfglue_la_LDFLAGS = -module -avoid-version -no-undefined
-+libgsfglue_la_LDFLAGS = -avoid-version -no-undefined
- 
- libgsfglue_la_LIBADD = $(GSF_LIBS)
 --- origsrc/gsf-sharp-0.8.1/gsf/gsf-sharp.dll.config.in	2006-09-18 13:29:22.000000000 -0500
 +++ src/gsf-sharp-0.8.1/gsf/gsf-sharp.dll.config.in	2007-03-11 11:06:57.531250000 -0500
 @@ -1,3 +1,3 @@
